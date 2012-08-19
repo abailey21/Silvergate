@@ -14,9 +14,9 @@ bool Silvergate::menu(Player *player)
     {
         print_description();
 
-        cout << "B: Blacksmith\n";
-        cout << "I: Inn\n";
-        cout << "G: General Store\n";
+        cout << "M: Visit Merchant Quarter\n";
+        cout << "I: Stay at Inn\n";
+        cout << "G: Head to Great Hall\n";
         cout << "L: Leave\n\n";
         cout << "Q: Quit Game\n\n";
         cout << "> ";
@@ -25,9 +25,9 @@ bool Silvergate::menu(Player *player)
 
         switch(choice)
         {
-            case 'b':
-            case 'B':
-                //blacksmith();
+            case 'm':
+            case 'M':
+                player->set_currentLocation("Silvergate Merchant Quarter");
                 return false;
                 break;
 
@@ -39,7 +39,7 @@ bool Silvergate::menu(Player *player)
 
             case 'g':
             case 'G':
-                //generalStore();
+                //greathall();
                 return false;
                 break;
 
@@ -58,3 +58,5 @@ bool Silvergate::menu(Player *player)
     } while (true);
 }
 
+
+       
