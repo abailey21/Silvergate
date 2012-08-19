@@ -18,6 +18,9 @@ class World
         WizardsTower *wizardsTower;
         DarkWoods *darkWoods;
         Silvergate *silvergate;
+        SilvergateMerchants *silvergateMerchants;
+
 };
 
 #endif
+
