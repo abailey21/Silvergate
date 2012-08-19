@@ -7,16 +7,18 @@ bool WizardsTower::menu(Player *player)
 {
     char choice;
 
-    set_locationTitle("Wizards Tower");
-    set_description("You stand before the colossus tower,\nyour hairs standing on end at the very thought of the\nmagical essences that radiate from this brick and motor\nplace is more homely than even the most bustling\ngiant which penetrates the very skyline and into the realm of the gods.\n\n");
+    set_locationTitle("Wizards' Tower");
+    set_description("You stand before the colossus tower,\nevery hair standing on end at the very thought of the\nmagical essences that radiate from this brick and mortar\ngiant; penetrating the very skyline and into the realm of the gods.\nA sinister realisation begins to flushes over you;\nyou are being observed.\n\n");
 
     do
+
     {
         print_description();
 
-        cout << "E: Arcane Enchanter Room\n";
-        cout << "I: Rejuvenation Temple\n";
-        cout << "G: Alchemist Chamber\n";
+
+        cout << "E: Enter Tower Anyway\n";
+        cout << "H: Attempt to Hide\n";
+        cout << "O: Search for Observer\n";
         cout << "L: Leave\n\n";
         cout << "Q: Quit Game\n\n";
         cout << "> ";
@@ -27,19 +29,19 @@ bool WizardsTower::menu(Player *player)
         {
             case 'e':
             case 'E':
-                //arcaneEnchanterRoom();
+                //entertower();
                 return false;
                 break;
 
-            case 'r':
-            case 'R':
-                //rejuvenationtemple();
+            case 'h':
+            case 'H':
+                //hide();
                 return false;
                 break;
 
-            case 'a':
-            case 'A':
-                //alchemistchamber();
+            case 'o':
+            case 'O':
+                //searchforobserver();
                 return false;
                 break;
 
@@ -57,5 +59,6 @@ bool WizardsTower::menu(Player *player)
 
     } while (true);
 }
+
 
 
