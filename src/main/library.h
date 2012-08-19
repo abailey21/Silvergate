@@ -23,6 +23,8 @@
 #include "../location files/location.h"
 #include "../location files/devilsCross.h"
 #include "../location files/silverGate.h"
+#include "../location files/silverGateMerchants.h"
+#include "../location files/silverGateBlacksmith.h"
 #include "../location files/wizardsTower.h"
 #include "../location files/darkWoods.h"
 #include "../location files/arena.h"
@@ -34,3 +36,4 @@
 using namespace std;
 
 #endif
+
