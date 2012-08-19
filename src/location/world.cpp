@@ -7,6 +7,7 @@ World::World()
     wizardsTower = new WizardsTower;
     darkWoods = new DarkWoods;
     silvergate = new Silvergate;
+    silvergateMerchants = new SilvergateMerchants;
 }
 
 World::~World()
@@ -16,6 +17,7 @@ World::~World()
     delete wizardsTower;
     delete darkWoods;
     delete silvergate;
+    delete silvergateMerchants;
 }
 
 void World::play(Player *player)
@@ -45,6 +47,11 @@ void World::play(Player *player)
         else if (player->get_currentLocation() == "Silvergate")
         {
             exit = silvergate->menu(player);
+        }
+
+         else if (player->get_currentLocation() == "Silvergate Merchant Quarter")
+        {
+            exit = silvergateMerchants->menu(player);
         }
 
     } while(!exit);
